@@ -15,18 +15,10 @@ body {
     color: #000000;
 }
 
-/* =========================
-   IMAGENS
-========================= */
-
 img {
     max-width: 100%;
     display: block;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .header {
     display: grid;
@@ -56,11 +48,6 @@ img {
 .menu a:hover {
     color: #00aaff;
 }
-
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     display: grid;
@@ -105,16 +92,9 @@ img {
     border-radius: 10px;
 }
 
-
-
-
-/* =========================
-   SEÇÕES
-========================= */
-
 .secao{
     padding: 80px 8%;
-    background: linear-gradient(135deg, #153770, #2f58aa)
+    background-color: rgb(209, 17, 17);
 }
 
 .titulo {
@@ -126,11 +106,6 @@ img {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
-
-/* =========================
-   GRID DA SOLUÇÃO
-========================= */
 
 .grid-solucao {
     display: grid;
@@ -149,11 +124,6 @@ img {
     margin-bottom: 15px;
 }
 
-
-/* =========================
-   PÚBLICO-ALVO
-========================= */
-
 .publico {
     background-color: #ffffff;
 }
@@ -164,17 +134,27 @@ img {
     gap: 30px;
 }
 
-
-/* =========================
-   GALERIA
-========================= */
-
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+   display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+.quadrado {
+    background-color: rgba(10, 36, 184, 0.5);
+
+}
+.subtitle{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .galeria-grid figure {
     background-color: white;
     border-radius: 10px;
@@ -193,10 +173,6 @@ img {
 }
 
 
-/* =========================
-   EQUIPE
-========================= */
-
 .equipe-cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -207,15 +183,14 @@ img {
 }
 
 .card-equipe {
-    background: #ffffff;
+    background: #f9f9f9;
     border-radius: 10px;
-    padding: 25px 15px;
+    padding: 35px 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 220px; /* todos com a mesma altura */
 }
 
 .card-equipe .foto {
@@ -234,7 +209,7 @@ img {
     font-size: 16px;
     margin: 0 0 5px 0;
     line-height: 1.2;
-    min-height: 38px; /* alinha os nomes */
+    min-height: 38px; 
     display: flex;
     align-items: center;
 }
@@ -246,7 +221,6 @@ img {
     border-radius: 50%;
 }
 
-/* Responsivo */
 @media (max-width: 1100px) {
     .equipe-cards { grid-template-columns: repeat(3, 1fr); }
 }
@@ -257,21 +231,12 @@ img {
     .equipe-cards { grid-template-columns: 1fr; }
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     padding: 25px;
     text-align: center;
     background-color: #111;
     color: white;
 }
-
-
-/* =========================
-   TABLET
-========================= */
 
 @media (max-width: 900px) {
 
@@ -304,10 +269,6 @@ img {
     }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 600px) {
 
